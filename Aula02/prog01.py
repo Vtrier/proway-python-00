@@ -1,8 +1,8 @@
 # match case
 
 if __name__ == "__main__":
-
-    acesso = input("Informe o seu nivel de acesso: ")
+    
+    acesso = input("Informe seu nível de acesso: ")
 
     match acesso.upper():
         case "USUARIO":
@@ -11,8 +11,5 @@ if __name__ == "__main__":
         case "GESTOR":
             print("Você possui um nível de acesso intermediário.")
 
-        case "ADMIN":
-            print("Você possui acesso total.")
-
         case _:
-            print("Acesso não reconhecido.")
+            print("Você possui acesso total.")
